@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f0f4f8, #d9e6f2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.event-card {
+  display: flex;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 700px;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+}
+
+.event-date {
+  background-color: #4b9eff;
+  color: white;
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 120px;
+}
+
+.event-date i {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.event-date .day {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.event-date .month {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.event-date .time {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.event-details {
+  padding: 24px;
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.tag {
+  background: #d1f4d6;
+  color: #1e8449;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.location {
+  margin: 8px 0;
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.description {
+  color: #34495e;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.cta-btn {
+  background-color: #4b9eff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #2179e3;
+}
