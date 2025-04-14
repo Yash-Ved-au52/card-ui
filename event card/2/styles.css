@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  padding: 20px;
+}
+
+/* Animation */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Event Card Container */
+.event-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 380px;
+  width: 100%;
+  animation: fadeSlideUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+/* Header Section */
+.event-header {
+  background-color: #4a00e0;
+  background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+  padding: 16px;
+  color: white;
+  text-align: center;
+}
+
+.event-header h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.event-header p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Event Info Section */
+.event-info {
+  padding: 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-detail {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #333;
+}
+
+.event-detail i {
+  margin-right: 10px;
+  color: #4a00e0;
+}
+
+/* Tag Section */
+.event-tag {
+  align-self: flex-start;
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 4px 10px;
+  font-size: 13px;
+  border-radius: 50px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* CTA Button */
+.cta-button {
+  margin: 20px;
+  padding: 10px;
+  background: #4a00e0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #8e2de2;
+}
