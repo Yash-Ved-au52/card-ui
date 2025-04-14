@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e1e1de;
+  height: 100vh;
+  padding: 20px;
+}
+
+.pricing-card {
+  background: transparent;
+  width: 320px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid transparent;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #fdfcfa, #e2ebf5);
+  z-index: -1;
+  opacity: 0;
+  border-radius: 20px;
+  transition: opacity 0.3s, height 0.5s;
+}
+
+.pricing-card:hover::before {
+  opacity: 1;
+  height: 100%;
+  transition: height 1s ease-in-out;
+}
+
+.plan-icon i {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 15px;
+  background: #0077ff;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.plan-title {
+  font-size: 28px;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 32px;
+  color: #0077ff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price i {
+  font-size: 24px;
+  margin-right: 6px;
+}
+
+.features {
+  list-style: none;
+  text-align: left;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.features li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.features i {
+  color: #0077ff;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.subscribe-btn {
+  background-color: #ff7c00;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-btn i {
+  margin-left: 8px;
+}
+
+.subscribe-btn:hover {
+  background-color: #2f0cdd;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
